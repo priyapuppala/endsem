@@ -1,0 +1,12 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: CmdLine@2
+  inputs:
+    script: |
+      javac hello.java
+      java hello
